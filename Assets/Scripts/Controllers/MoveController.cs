@@ -9,6 +9,8 @@ public class MoveController : MonoBehaviour {
 
 	public Transform aim;
 
+	public Pulse camPulse;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -35,6 +37,7 @@ public class MoveController : MonoBehaviour {
 				Debug.Log(hit.collider.name);
 				float dispTime  = lastDestPoint.DoMovement(transform);
 				canRaycast = false;
+				camPulse.pulseActive = true;
 				aim.GetComponent<Renderer>().enabled = false;
 				Invoke("ActivateRaycast", dispTime );
 			}
@@ -45,6 +48,7 @@ public class MoveController : MonoBehaviour {
 	}
 
 	void ActivateRaycast(){
+		camPulse.pulseActive = false;
 		aim.GetComponent<Renderer>().enabled = true;
 		canRaycast = true;
 	}
