@@ -80,12 +80,13 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
-'Assets/Scripts/Controllers/Blink.cs'
 'Assets/Scripts/Controllers/CamController.cs'
+'Assets/Scripts/Controllers/GyroscopeControl.cs'
 'Assets/Scripts/Controllers/MoveController.cs'
+'Assets/Scripts/Effects/Blink.cs'
 'Assets/Scripts/Effects/Pulse.cs'
+'Assets/Scripts/Effects/Shake.cs'
 'Assets/Scripts/Movement/DisplacementPoint.cs'
-'Assets/Scripts/Shake.cs'
 -r:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll'
 -r:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.dll'
